@@ -28,7 +28,7 @@ dependencies {
 }
 
 
-NAME = 'XPermission'
+NAME = 'CPermission'
 VERSION = '1.0.0'
 ARTIFACT_ID = 'x-permission'
 apply from: 'http://chunyang1988.com/nexus_upload.gradle'

@@ -57,11 +57,11 @@ public class PermissionsActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         if (isRequireCheck) {
-            if (XPermission.hasPermission(this, permissions)) {
+            if (CPermission.hasPermission(this, permissions)) {
                 permissionsGranted();
                 Log.w(TAG, "onResume: 已经授权过了");
             } else {
-                if (XPermission.shouldShowPermission(this, permissions)) {
+                if (CPermission.shouldShowPermission(this, permissions)) {
                     Log.w(TAG, "onResume: 用户拒绝了授权");
                     showMissingPermissionDialog();
                 } else {
@@ -94,7 +94,7 @@ public class PermissionsActivity extends AppCompatActivity {
         builder.setPositiveButton(defaultEnsure, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                XPermission.gotoSetting(PermissionsActivity.this);
+                CPermission.gotoSetting(PermissionsActivity.this);
             }
         });
 
@@ -121,8 +121,8 @@ public class PermissionsActivity extends AppCompatActivity {
         Log.w(TAG, "requestCode:" + requestCode);
         //部分厂商手机系统返回授权成功时，厂商可以拒绝权限，所以要用PermissionChecker二次判断
         if (requestCode == PERMISSION_REQUEST_CODE &&
-                XPermission.isGrantedResult(grantResults) &&
-                XPermission.hasPermission(this, permissions)) {
+                CPermission.isGrantedResult(grantResults) &&
+                CPermission.hasPermission(this, permissions)) {
             permissionsGranted();
             Log.w(TAG, "onRequestPermissionsResult: 获取到权限");
         } else { //不需要提示用户
@@ -133,7 +133,7 @@ public class PermissionsActivity extends AppCompatActivity {
 
 
     private void permissionsDenied() {
-        PermissionListener listener = XPermission.fetchListener(key);
+        PermissionListener listener = CPermission.fetchListener(key);
         if (listener != null) {
             listener.permissionDenied(permissions);
         }
@@ -142,7 +142,7 @@ public class PermissionsActivity extends AppCompatActivity {
 
     // 全部权限均已获取
     private void permissionsGranted() {
-        PermissionListener listener = XPermission.fetchListener(key);
+        PermissionListener listener = CPermission.fetchListener(key);
         if (listener != null) {
             listener.permissionGranted(permissions);
         }

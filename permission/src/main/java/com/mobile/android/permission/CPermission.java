@@ -16,7 +16,7 @@ import java.util.HashMap;
  * Created by chunyang on 2018/3/14.
  */
 
-public class XPermission {
+public class CPermission {
 
     private static HashMap<String, PermissionListener> listenerMap = new HashMap();
 
