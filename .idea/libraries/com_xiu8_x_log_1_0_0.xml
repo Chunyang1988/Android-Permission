@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.xiu8:x-log-1.0.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/x-log-1.0.0.aar/aa89f15bb2dc06f804eeac56a633dfa0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/x-log-1.0.0.aar/aa89f15bb2dc06f804eeac56a633dfa0/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.xiu8/x-log/1.0.0/5d70aae6d665b9d15fa6368a1432a38c93a0bb32/x-log-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
