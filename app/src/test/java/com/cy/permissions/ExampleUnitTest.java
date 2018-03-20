@@ -1,4 +1,4 @@
-package com.mobile.android.permission;
+package com.cy.permissions;
 
 import org.junit.Test;
 
