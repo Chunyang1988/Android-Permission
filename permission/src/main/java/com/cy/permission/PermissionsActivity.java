@@ -1,4 +1,4 @@
-package com.cy.permissions;
+package com.cy.permission;
 
 import android.content.Context;
 import android.content.DialogInterface;

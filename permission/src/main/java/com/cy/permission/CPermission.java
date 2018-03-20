@@ -1,4 +1,4 @@
-package com.cy.permissions;
+package com.cy.permission;
 
 import android.app.Activity;
 import android.content.Context;

@@ -1,4 +1,4 @@
-package com.cy.permissions;
+package com.cy.demo;
 
 import org.junit.Test;
 

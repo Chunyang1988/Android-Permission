@@ -1,4 +1,4 @@
-package com.cy.permissions;
+package com.cy.demo;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

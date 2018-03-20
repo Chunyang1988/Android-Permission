@@ -1,4 +1,4 @@
-package com.cy.permissions;
+package com.cy.permission;
 
 import android.support.annotation.NonNull;
 

@@ -1,4 +1,4 @@
-package com.cy.permissions;
+package com.cy.demo;
 
 import android.Manifest;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.cy.permission.CPermission;
+import com.cy.permission.PermissionListener;
 import com.xiu8.log.XLog;
 
 public class MainActivity extends AppCompatActivity {

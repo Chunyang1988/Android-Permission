@@ -1,11 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.cy.permissions">
+    package="com.cy.demo">
 
     <uses-permission android:name="android.permission.CAMERA" />
     <application>
 
         <activity
-            android:name="com.cy.permissions.PermissionsActivity"
+            android:name="com.cy.permission.demo.PermissionsActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/Permission_NoTitleTranslucentTheme" />
